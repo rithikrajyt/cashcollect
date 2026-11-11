@@ -1,7 +1,7 @@
 # CashCollect Finance OS — Architecture & Implementation
 
 **Version:** 1.0.0 (MVP)  
-**Status:** Live at https://cashcollect.vercel.app | Demo: https://canva.link/jn2414npoknss2h
+**Status:** Live at https://cashcollect.vercel.app | Demo: https://canva.link/d9u2h682oco39k2
 
 ---
 
@@ -220,6 +220,6 @@ npm run dev
 
 **I have included my architecture diagram and implementation notes.**
 
-*Live Demo:* https://canva.link/jn2414npoknss2h  
+*Live Demo:* https://canva.link/d9u2h682oco39k2  
 *GitHub:* https://github.com/rithikrajyt/cashcollect  
 *App:* https://cashcollect.vercel.app

@@ -3,7 +3,7 @@
 > AI-powered financial operating system for Indian SMEs, integrated with Claude via Model Context Protocol (MCP).
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=flat-square)](https://cashcollect.vercel.app)
-[![Video Demo](https://img.shields.io/badge/video-watch-red?style=flat-square)](https://canva.link/jn2414npoknss2h)
+[![Video Demo](https://img.shields.io/badge/video-watch-red?style=flat-square)](https://canva.link/d9u2h682oco39k2)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](#license)
 
 **Create invoices, track receivables, and manage collections by talking to Claude. No AI API costs—zero inference charges.**
@@ -134,7 +134,7 @@ npm run test         # Vitest
 ## 🎥 Demo
 
 **Live App:** https://cashcollect.vercel.app  
-**Video Demo:** https://canva.link/jn2414npoknss2h
+**Video Demo:** https://canva.link/d9u2h682oco39k2
 
 ### Try Without Sign Up
 ```
