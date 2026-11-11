@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 224 224" role="img" aria-labelledby="t">
+<title id="t">CashCollect app icon</title><defs><linearGradient id="g" x1="20" y1="20" x2="190" y2="200"><stop stop-color="#7667FF"/><stop offset="1" stop-color="#4937D8"/></linearGradient></defs>
+<rect x="4" y="4" width="216" height="216" rx="54" fill="#F4F2FF"/>
+<path d="M112 24C63 24 24 63 24 112s39 88 88 88c29 0 55-14 71-36l-31-23c-9 12-23 19-40 19-27 0-48-21-48-48s21-48 48-48c17 0 31 7 40 19l31-23c-16-22-42-36-71-36Z" fill="url(#g)"/>
+<path d="M91 139V99h22v40H91Zm34 0V79h22v60h-22Zm34 0V57h22v82h-22Z" fill="#fff"/>
+<path d="m85 92 28-20 22 10 31-29" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
