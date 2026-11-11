@@ -8,7 +8,7 @@ import type { NextRequest } from 'next/server';
  * Full HMAC verification happens in the API routes (Node runtime);
  * Edge proxy only does a structural check.
  */
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Only protect /app/* dashboard routes
