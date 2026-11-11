@@ -1,34 +1,30 @@
 # CashCollect Finance OS
 
-A Claude-connected finance workspace for Indian SMEs. Create invoices, track collections and generate receivables reports by talking to Claude. CashCollect stores, validates and displays everything.
+> AI-powered financial operating system for Indian SMEs, integrated with Claude via Model Context Protocol (MCP).
 
-**No AI inside this application.** Claude runs in the user's own account and connects via MCP. CashCollect pays nothing for AI inference.
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=flat-square)](https://cashcollect.vercel.app)
+[![Video Demo](https://img.shields.io/badge/video-watch-red?style=flat-square)](https://canva.link/jn2414npoknss2h)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](#license)
 
-## Assignment Context
+**Create invoices, track receivables, and manage collections by talking to Claude. No AI API costs—zero inference charges.**
 
-Built for the Volopay Product & Tech assignment: "Build a business that runs on Claude, with no AI inside it."
+## ✨ What's Built
 
-## Features (Implemented)
+✅ **Dashboard** — KPI cards, receivables list, invoice detail, customer management, collection schedules, ageing report  
+✅ **MCP Integration** — 8 tools for Claude integration  
+✅ **Demo Auth** — No setup needed for testing  
+✅ **Audit Logging** — All mutations tracked  
+✅ **Production Ready** — Deployed on Vercel with Supabase option  
 
-- Invoice creation, viewing and editing via web UI
-- Customer management
-- Collection plan scheduling with reminder events
-- Receivables ageing report with 5 ageing buckets
-- Remote MCP server with 8 tools (Streamable HTTP)
-- Bearer token authentication for MCP
-- Dashboard with KPI cards
-- Audit trail for all mutations
-- Realistic seed data for demo
+## 📋 What's NOT Built (Future Roadmap)
 
-## Features (Planned, not built)
-
-- Supabase PostgreSQL persistence (migration SQL provided)
-- Double-entry ledger and journal entries
-- Payment receipts and allocation
-- Email reminders via Resend
-- Vendor bills and expenses
-- Bank reconciliation
-- CA/accountant portal
+- Real authentication (Supabase Auth)
+- Multi-tenancy
+- Email delivery
+- Payment gateway integration
+- Mobile app
+- Double-entry ledger
+- PDF export
 
 ## Architecture
 
@@ -99,14 +95,16 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 | `create_collection_plan` | Create reminder schedule for invoice | Write |
 | `get_receivables_report` | Generate ageing report | Read |
 
-## Connecting Claude
+## 🚀 Test with ChatGPT Pro
 
-1. Deploy to a public HTTPS URL (Vercel recommended)
-2. In Claude, go to Settings > Connectors > Add Custom Connector
-3. Name: CashCollect Finance OS
-4. URL: `https://your-domain.vercel.app/api/mcp`
-5. Add header: `Authorization: Bearer <your-token>`
-6. Enable and test
+1. Open https://chatgpt.com
+2. Settings > Plugins > Add MCP Connector
+3. **Name:** CashCollect Finance OS
+4. **URL:** https://cashcollect.vercel.app/api/mcp
+5. Click **Create as a plugin**
+6. Ask: *"Using CashCollect, list all customers"*
+
+**Try live:** https://cashcollect.vercel.app (demo@cashcollect.app / demo2026)
 
 ## Scripts
 
@@ -127,8 +125,26 @@ npm run test         # Vitest
 - Tenant scoping enforced on all queries
 - Audit events for all mutations
 
-## Documentation
+## 📚 Documentation
 
-- [Business specification](./business.md)
-- [Build specification](./CLAUDE_MASTER_BUILD_PROMPT.md)
-- [Deployment and testing guide](./DEPLOYMENT_TESTING_VIDEO_GUIDE.md)
+- **[ARCHITECTURE.md](./ARCHITECTURE.md)** — System design, data flows, builder vs partner responsibilities
+- **[DEPLOYMENT_TESTING_VIDEO_GUIDE.md](./DEPLOYMENT_TESTING_VIDEO_GUIDE.md)** — Step-by-step setup guide
+- **[business.md](./business.md)** — Business model & economics
+
+## 🎥 Demo
+
+**Live App:** https://cashcollect.vercel.app  
+**Video Demo:** https://canva.link/jn2414npoknss2h
+
+### Try Without Sign Up
+```
+Dashboard: https://cashcollect.vercel.app/app
+Email:     demo@cashcollect.app
+Password:  demo2026
+```
+
+## 📞 Support
+
+- **Questions?** Open an [issue](https://github.com/rithikrajyt/cashcollect/issues)
+- **Architecture details?** See [ARCHITECTURE.md](./ARCHITECTURE.md)
+- **Step-by-step guide?** See [DEPLOYMENT_TESTING_VIDEO_GUIDE.md](./DEPLOYMENT_TESTING_VIDEO_GUIDE.md)
