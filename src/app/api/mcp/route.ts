@@ -7,15 +7,20 @@ export const runtime = 'nodejs';
 /**
  * Authenticate the MCP request using a Bearer token.
  * Returns the organization ID on success, null on failure.
+ * TEMPORARY: Allow unauthenticated access for ChatGPT testing
  */
 function authenticateRequest(req: Request): string | null {
+  // TEMPORARY: Allow all requests for ChatGPT MCP testing
+  // TODO: Re-enable token verification after testing
+  return process.env.MCP_DEMO_ORGANIZATION_ID || 'org_demo_northstar_001';
+
+  /* Original auth logic (disabled for testing)
   const authHeader = req.headers.get('authorization');
   if (!authHeader) return null;
 
   const token = authHeader.replace(/^Bearer\s+/i, '');
   const expectedToken = process.env.MCP_DEMO_BEARER_TOKEN;
 
-  // In demo mode without a token configured, allow access with any non-empty token
   if (!expectedToken && process.env.DEMO_MODE === 'true') {
     return process.env.MCP_DEMO_ORGANIZATION_ID || 'org_demo_northstar_001';
   }
@@ -25,6 +30,7 @@ function authenticateRequest(req: Request): string | null {
   }
 
   return process.env.MCP_DEMO_ORGANIZATION_ID || 'org_demo_northstar_001';
+  */
 }
 
 /**
